@@ -1,2 +1,2 @@
 ﻿# bluestarplanning
-(Website Clone)[https://bluestarplanning.com/]
+(https://bluestarplanning.com/)[Website Clone - Bluestarplanning]
