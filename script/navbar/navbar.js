@@ -25,6 +25,6 @@ mobileBtnClose.addEventListener("click", () => {
 function toggleMenu() {
     displayMenu.classList.toggle('responsive-menu');
 
-    displayMenu.style.width = `${window.innerWidth}px`;
+    displayMenu.style.width = `${window.innerWidth + 1}px`;
     visibleResponsiveNav = !visibleResponsiveNav;
 };

@@ -20,7 +20,12 @@
 </head>
 <body>
     
-    <div class="background-image"></div>
+    <!-- background content -->
+    <div class="background-content">
+        <div class="background-image"></div>
+    </div>
+    <!-- end background content -->
+
 
     <!-- Responsive Menu -->
     <div id="responsiveMainMenu" class="hidden">
@@ -48,36 +53,69 @@
     </div>
     <!-- End Responsive Menu -->
 
-    <nav>
-        <div class="container">
-            <div class="company-logo">
-                <img src="https://bluestarplanning.com/wp-content/uploads/2022/04/PNG-LOGO-Wit-versie-1-small.png" alt="bluestarplanning">
-            </div>
-            
-            <div class="company-pages">
-                
-                <!-- mobile icon for responsive navbar -->
-                <div class="mobile-icon">
-                    <span class="mobile-line material-symbols-outlined">menu</span>
-                </div>
+    <!-- website information -->
 
-                <div class="nav-links">
-                    <a href="#" class="navLink active">Home</a>
-                    <a href="#" class="navLink">Platform</a>
-                    <a href="#" class="navLink">Services</a>
-                    <a href="#" class="navLink">About Us</a>
-                    <a href="#" class="navLink">Careers</a>
-                    <a href="#" class="navLink">Contact</a>
-                </div>
+    <section class="website_info">
 
-                <div class="nav-search">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-
-            </div>
+        <div class="open-modal-btn">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
         </div>
-    </nav>
+        
+        <!-- toggle class hidden when click ... / x -->
+        <div class="show-modal">
+
+        </div>
+
+    </section>
+
+    <!-- end website information -->
+
+    <section class="main-page-content">
+
+        <!-- center message -->
+        <div class="background-message">
+            <span id="page-title">Platform for production planning</span>
+            <span id="page-message">Use and visualize existing data immediately</span>
+        </div>
+        <!-- end center message -->
+
+        <!-- page navigation bar -->
+        <nav>
+            <div class="container">
+                <div class="company-logo">
+                    <img src="https://bluestarplanning.com/wp-content/uploads/2022/04/PNG-LOGO-Wit-versie-1-small.png" alt="bluestarplanning">
+                </div>
+                
+                <div class="company-pages">
+                    
+                    <!-- mobile icon for responsive navbar -->
+                    <div class="mobile-icon">
+                        <span class="mobile-line material-symbols-outlined">menu</span>
+                    </div>
+
+                    <div class="nav-links">
+                        <a href="#" class="navLink active">Home</a>
+                        <a href="#" class="navLink">Platform</a>
+                        <a href="#" class="navLink">Services</a>
+                        <a href="#" class="navLink">About Us</a>
+                        <a href="#" class="navLink">Careers</a>
+                        <a href="#" class="navLink">Contact</a>
+                    </div>
+
+                    <div class="nav-search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <!-- end page navigation bar -->
+
+    </section>
     
-    <script src="./script/script.js"></script>
+    <script src="./script/navbar/navbar.js"></script>
+    <script src="./script/background/background.js"></script>
 </body>
 </html>
