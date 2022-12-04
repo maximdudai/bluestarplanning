@@ -46,7 +46,7 @@ li, a {
 .background-message {
     max-width: 50%;
 
-    position: fixed;
+    position: absolute;
     top: 30%;
     left: 25%;
     font-weight: 600;
@@ -100,6 +100,46 @@ li, a {
 
 // end website information
 
+// goto section
+.goto-section {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    color: white;
+
+
+
+    .down-icon {
+        a {
+            text-decoration: none;
+            color: white;
+
+            span {
+                font-size: 2rem;
+                animation: updown 2s ease infinite;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@keyframes updown {
+    0% {
+      transform: translateY(-25%);
+    }
+  
+    50% {
+      transform: translateY(25%);
+    }
+  
+    100% {
+      transform: translateY(-25%);
+    }
+  }
+// end goto section
+
+
 // navbar
 nav {
     width: 100%;
@@ -109,6 +149,8 @@ nav {
     border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
 }
 nav {
+    position: fixed;
+    z-index: 150;
     .container {
         display: flex;
         flex-direction: row;
@@ -135,7 +177,6 @@ nav {
 
         max-width: 50rem;
     }
-
     .nav-links .active {
         border-bottom: 2px solid orange;
     }
@@ -158,11 +199,11 @@ nav {
         align-items: center;
         min-width: 5rem;
         height: 100%;
+        border-left: 1px solid rgba($color: #fff, $alpha: 0.5);
     }
     .nav-search button {
         background: none;
         border: 0;
-        border-left: 1px solid rgba($color: #fff, $alpha: 0.5);
         height: 100%;
     }
     .nav-search button i {
@@ -172,6 +213,155 @@ nav {
         cursor: pointer;
     }
 }
+
+// header
+
+header {
+    background-color: #404040;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 100vh;
+    
+    width: 100%;
+    height: 100vh;
+    .container {
+        width: 80%;
+        height: 100%;
+    }
+
+}
+.section--2 {
+    height: 100%;
+
+    .section--2_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        margin: 5%;
+
+        font-size: 1.25rem;
+
+        .section-title {
+            letter-spacing: 1.5px;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+
+            .our-services-content {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 50%;
+
+                .our-services {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    height: 100%;
+                    
+                    .servicesContent {
+                        max-width: 80%;
+
+                        .service-title-content {
+                            font-size: 1.5rem;
+                            margin-bottom: 10px;
+                        }
+
+                        h4 {
+                            display: flex;
+                            margin-bottom: 5px;
+                            span {
+                                margin-left: 10px;
+                                color: orange;
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                            }
+                        }
+
+                        ul, li {
+                            list-style: inside;
+                        }
+                    }
+                }
+            }
+
+
+            .image-gif--request-btn {
+                .gif img {
+                    max-width: 350px;
+                }
+
+                .btn {
+                    width: 100%;
+
+                    button {
+                        margin-top: 10px;
+                        width: 100%;
+                        padding: 10px;
+                        font-size: .9rem;
+                        border: 2px solid orange;
+                        background: transparent;
+                        
+                        cursor: pointer;
+
+                        a {
+                            color: orange;
+                            text-transform: uppercase;
+                        }
+                    }
+                    button:hover {
+                        transition: all .3s ease-in-out;
+
+                        background-color: orange;
+                        a {
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .our-resume {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .resumeContent {
+                display: flex;
+                flex-direction: row;
+
+                max-width: 32%;
+
+                .content-icon {
+                    padding: 0 10px;
+                    color: orange;
+
+                    span {
+                        font-size: 3rem;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+// end header
 
 // ------------ RESPONSIVE NAVBAR ------------ \\
 
@@ -212,6 +402,7 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 500;
 
     .resp-nav-link {
         width: 80%;
@@ -313,5 +504,12 @@ nav {
             border-radius: 5px;
             padding: 5px;
         }
+    }
+    .website_info {
+        right: 15%;
+        bottom: 5%;
+    }
+    .goto-section {
+        display: none;
     }
 }

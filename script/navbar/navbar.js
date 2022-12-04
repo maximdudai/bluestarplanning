@@ -28,3 +28,21 @@ function toggleMenu() {
     displayMenu.style.width = `${window.innerWidth + 1}px`;
     visibleResponsiveNav = !visibleResponsiveNav;
 };
+
+window.addEventListener("scroll", (event) => {
+    let scroll = this.scrollY;
+
+    const navBar = document.querySelector(".page-navigation-bar");
+    const gotoSectionBtn = document.querySelector(".goto-section");
+
+    if(scroll > 0) {
+        navBar.style.backgroundColor = 'rgba(18,27,67,1)';
+        navBar.style.border = 0;
+        gotoSectionBtn.style.opacity = scroll == -0 ? '1' : `${25/scroll}`;
+
+    } else {
+        navBar.style.backgroundColor = 'transparent';
+        navBar.style.borderBottom = '1px solid rgba(255, 255, 255, .5)';
+        gotoSectionBtn.style.opacity = '1';
+    }
+});
