@@ -33,27 +33,30 @@ li, a {
   filter: brightness(0.5);
 }
 
-.background-message {
-  max-width: 50%;
+.main-page-content {
+  width: 100%;
+}
+.main-page-content .background-message {
   position: absolute;
-  top: 30%;
-  left: 25%;
-  font-weight: 600;
-  display: flex;
-  flex-direction: column;
+  top: 45%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
   padding: 10px;
-  border-radius: 10px;
   text-align: center;
+  font-weight: 600;
 }
-.background-message #page-title {
-  font-size: 5rem;
-}
-.background-message #page-message {
-  font-size: 2.5rem;
-}
-.background-message #page-title, .background-message #page-message {
+.main-page-content .background-message #page-title, .main-page-content .background-message #page-message {
   color: white;
   letter-spacing: 1.5px;
+}
+.main-page-content .background-message #page-title {
+  font-size: 5rem;
+}
+.main-page-content .background-message #page-message {
+  font-size: 2.5rem;
 }
 
 .website_info {
@@ -193,7 +196,7 @@ header {
   position: absolute;
   top: 100vh;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 header .container {
   width: 80%;
@@ -365,53 +368,4 @@ header .container {
   border-radius: 5px;
   text-transform: uppercase;
   border: 0;
-}
-
-@media only screen and (max-width: 1000px) {
-  .background-message {
-    position: absolute;
-    min-width: 100%;
-    left: 0;
-  }
-  .background-message #page-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  .background-message #page-message {
-    font-size: 1.5rem;
-  }
-  nav .container {
-    width: 100%;
-  }
-  .company-pages .mobile-icon {
-    display: flex;
-    flex-direction: column;
-  }
-  .company-pages .mobile-icon, .company-pages .mobile-line {
-    cursor: pointer;
-  }
-  .company-pages .nav-links {
-    display: none;
-  }
-  .company-pages .nav-search {
-    display: none;
-  }
-  .responsive-menu .resp-nav-link {
-    min-width: 90%;
-  }
-  .responsive-menu .search-info input[type=text] {
-    font-size: 1rem;
-    max-width: 70%;
-    height: 30px;
-    border: 0;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  .website_info {
-    right: 15%;
-    bottom: 5%;
-  }
-  .goto-section {
-    display: none;
-  }
 }/*# sourceMappingURL=style.css.map */

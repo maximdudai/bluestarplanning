@@ -41,34 +41,37 @@ li, a {
 }
 // end background content
 
+.main-page-content {
+    width: 100%;
 
-// center message
-.background-message {
-    max-width: 50%;
+    // center message
+    .background-message {
+        position: absolute;
+        top:45%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: -1;
 
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    font-weight: 600;
+        padding: 10px;
+        text-align: center;
+        font-weight: 600;
 
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-
-    #page-title {
-        font-size: 5rem;
+        #page-title, #page-message {
+            color: white;
+            letter-spacing: 1.5px;
+        }
+        #page-title {
+            font-size: 5rem;
+        }
+        #page-message {
+            font-size: 2.5rem;
+        }
     }
-    #page-message {
-        font-size: 2.5rem;
-    }
-    #page-title, #page-message {
-        color: white;
-        letter-spacing: 1.5px;
-    }
+    // end center message
+    
 }
-// end center message
 
 // website information
 .website_info {
@@ -228,7 +231,7 @@ header {
     top: 100vh;
     
     width: 100%;
-    height: 100vh;
+    height: 100%;
     .container {
         width: 80%;
         height: 100%;
@@ -446,70 +449,5 @@ header {
         text-transform: uppercase;
         border: 0;
         
-    }
-}
-
-// --------------------------------------------------------------------------- \\
-@media only screen and (max-width: 1000px)  {
-
-    .background-message {
-        position: absolute;
-        min-width: 100%;
-        
-        left: 0;
-
-        #page-title {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-        #page-message {
-            font-size: 1.5rem;
-        }
-    }
-
-    nav {
-        .container {
-            width: 100%;
-        }
-    }
-
-    .company-pages {
-        .mobile-icon {
-            display: flex;
-            flex-direction: column;
-        }
-        .mobile-icon, .mobile-line {
-            cursor: pointer;
-        }
-
-        .nav-links {
-            display: none;
-        }
-        .nav-search {
-            display: none;
-        }
-    }
-
-    .responsive-menu {
-
-        .resp-nav-link {
-            min-width: 90%;
-        }
-
-        .search-info input[type="text"] {
-            font-size: 1rem;
-            max-width: 70%;
-            height: 30px;
-            border: 0;
-            border-radius: 5px;
-            padding: 5px;
-        }
-    }
-    .website_info {
-        right: 15%;
-        bottom: 5%;
-    }
-    .goto-section {
-        display: none;
     }
 }
