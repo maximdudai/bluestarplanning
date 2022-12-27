@@ -31,6 +31,7 @@ header {
 }
 header .container {
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid orange;
@@ -45,11 +46,6 @@ header .container nav {
 }
 header .container nav .hidden {
   display: none !important;
-}
-header .container nav .page-links .mobile-screen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 header .container nav .page-links .mobile-screen ul {
   padding: 0;
@@ -85,6 +81,36 @@ header .container nav .page-links .mobile-screen .mobile-menu-display #closeMenu
   align-items: center;
   justify-content: center;
 }
+header .container nav .page-links .mobile-screen .mobile-menu-display .search-engine {
+  min-width: 80%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid orange;
+  border-radius: 5px;
+}
+header .container nav .page-links .mobile-screen .mobile-menu-display .search-engine .search-input {
+  width: 83%;
+}
+header .container nav .page-links .mobile-screen .mobile-menu-display .search-engine .search-input #searchContent {
+  background: 0;
+  border: 0;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  font-size: 1.15rem;
+}
+header .container nav .page-links .mobile-screen .mobile-menu-display .search-engine .search-button {
+  display: flex;
+  align-items: center;
+}
+header .container nav .page-links .mobile-screen .mobile-menu-display .search-engine .search-button .searchSubmitBtn {
+  background: none;
+  border: 0;
+  padding: 0 10px;
+}
 header .container nav .page-links .large-screen {
   display: none;
 }
@@ -108,4 +134,88 @@ header .container nav .page-links .large-screen .navbar-links li .active {
 header .container nav .page-search-btn .material-symbols-outlined {
   cursor: pointer;
   color: white;
+}
+header .center-screen-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  font-weight: 600;
+}
+header .center-screen-message .screen-message_title {
+  margin-bottom: 10px;
+}
+header .center-screen-message .screen-message_title .message-title {
+  font-size: 2.25rem;
+}
+header .center-screen-message .screen-message_content .message-content {
+  font-size: 1.25rem;
+}
+
+.main-page-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main-page-content .page-content {
+  margin: 10% 0;
+}
+.main-page-content .page-content .main-content-title .main-title {
+  font-size: 2rem;
+}
+.main-page-content .page-content .main-content-ourServices {
+  display: flex;
+  flex-direction: column;
+  margin: 15% 0;
+}
+.main-page-content .page-content .main-content-ourServices .serviceItem {
+  text-align: left;
+  font-size: 1.25rem;
+  padding: 10px;
+}
+.main-page-content .page-content .main-content-ourServices .serviceItem .serviceTitle {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.main-page-content .page-content .main-content-ourServices .serviceItem .serviceTitle .serviceItemChecked {
+  color: orange;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.main-page-content .page-content .main-content-ourServices .serviceItem .serviceContent .serviceList {
+  padding: 0;
+}
+.main-page-content .page-content .main-content-ourServices .serviceItem .serviceContent .serviceList .serviceListItem {
+  list-style: inside;
+}
+.main-page-content .page-content .request-a-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-page-content .page-content .request-a-contact .request-image .dataStructureImage {
+  max-width: 95%;
+  height: auto;
+  border-radius: 5px;
+}
+.main-page-content .page-content .request-a-contact .request-button {
+  margin-top: 10px;
+  border: 1px solid orange;
+  padding: 5px 20px;
+}
+.main-page-content .page-content .request-a-contact .request-button .requestCallButton {
+  background-color: transparent;
+  border: 0;
+}
+.main-page-content .page-content .request-a-contact .request-button .requestCallButton .callButton {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

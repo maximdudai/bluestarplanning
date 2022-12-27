@@ -24,18 +24,16 @@
 
     <!-- navigationbar -->
     <header>
-
-        <div class="container">
+        <div class="container navBarContainer">
             <nav>
                 <div class="page-logo">
                     <h1>YOUR LOGO</h1>
                 </div>
-                
                 <div class="page-links">
 
                     <span class="material-symbols-outlined" id="openMenu">menu</span>
                     
-                    <div class="mobile-screen">
+                    <div class="mobile-screen hidden">
                         <div class="mobile-menu-display">
                             <span class="material-symbols-outlined" id="closeMenu">close</span>
 
@@ -48,18 +46,22 @@
                                 <li><a href="#">Contact</a></li>
                             </ul>
 
-                            <!-- <div class="search-engine">
-                                <input type="text" name="search_engine" id="searchEngine" maxlength="256" placeholder="" />
-                                <button type="submit">
-                                    search
-                                    <span class="material-symbols-outlined">search</span>
-                                </button>
-                            </div> -->
+                            <div class="search-engine">
+                                
+                                <div class="search-input">
+                                    <input type="text" name="search_item" id="searchContent" maxlength="256" placeholder="Search..." spellcheck="false">
+                                </div>
+
+                                <div class="search-button">
+                                    <button class="searchSubmitBtn" type="submit">
+                                        <span class="material-symbols-outlined">search</span>
+                                    </button>
+                                </div>
+
+                            </div>
                             
                         </div>
-
                     </div>
-
                     <div class="large-screen hidden">
                         <ul class="navbar-links">
                             <li><a href="#" class="active">Home</a></li>
@@ -82,7 +84,107 @@
             </nav>
         </div>
 
+        <div class="center-screen-message">
+
+            <div class="screen-message_title">
+                <div class="message-title">
+                    Lorem ipsum dolor sit amet consectetur.
+                </div>
+            </div>
+
+            <div class="screen-message_content">
+                <div class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                </div>
+            </div>
+        </div>
+
     </header>
+
+    <section class="main-page-content">
+
+        <div class="page-content">
+            <div class="main-content-title">
+                <div class="main-title">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </div>
+            </div>
+
+            <div class="main-content-ourServices">
+               
+                <!-- serviceitem #1 -->
+                <div class="serviceItem">
+                    <div class="serviceTitle">
+                        Lorem, ipsum dolor.
+                        <span class="material-symbols-outlined serviceItemChecked">done</span>
+                    </div>
+                    <div class="serviceContent">
+                        <ul class="serviceList">
+                            <li class="serviceListItem">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat culpa incidunt iste voluptate voluptatem, dignissimos blanditiis tempore rerum maxime eos, nulla ipsam officia delectus dolorem sequi est, sapiente a? Veritatis.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end serviceitem #1 -->
+
+
+                <!-- serviceitem #2 -->
+                <div class="serviceItem">
+                    <div class="serviceTitle">
+                        Lorem, ipsum dolor.
+                        <span class="material-symbols-outlined serviceItemChecked">done</span>
+                    </div>
+                    <div class="serviceContent">
+                        <ul class="serviceList">
+                            <li class="serviceListItem">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat culpa incidunt iste voluptate voluptatem, dignissimos blanditiis tempore rerum maxime eos, nulla ipsam officia delectus dolorem sequi est, sapiente a? Veritatis.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end serviceitem #2 -->
+
+
+                <!-- serviceitem #3 -->
+                <div class="serviceItem">
+                    <div class="serviceTitle">
+                        Lorem, ipsum dolor.
+                        <span class="material-symbols-outlined serviceItemChecked">done</span>
+                    </div>
+                    <div class="serviceContent">
+                        <ul class="serviceList">
+                            <li class="serviceListItem">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat culpa incidunt iste voluptate voluptatem, dignissimos blanditiis tempore rerum maxime eos, nulla ipsam officia delectus dolorem sequi est, sapiente a? Veritatis.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end serviceitem #3 -->
+            </div>
+
+            <div class="request-a-contact">
+
+                <div class="request-image">
+                    <img class="dataStructureImage" src="https://www.springboard.com/blog/wp-content/uploads/2020/07/what-are-data-structures-and-algorithms.png" alt="data structure image">
+
+                </div>
+
+                <div class="request-button">
+                    <button type="submit" class="requestCallButton">
+                        <a class="callButton" href="#">
+                            <span class="contact-me">contact me</span>
+                            <span class="material-symbols-outlined">navigate_next</span>
+                        </a>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+            
+    </section>
+
 
     <script src="./script/navbar/navbar.js"></script>
 </body>
