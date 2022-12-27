@@ -1,48 +1,17 @@
 'use strict'
 
-let mobileBtnOpen = document.querySelector(".mobile-icon"); 
-let mobileBtnClose = document.querySelector(".close-menu"); 
+const mobileNavBarBtn_open = document.getElementById("openMenu");
+const mobileNavBarBtn_close = document.getElementById("closeMenu");
 
-let mobileMenuSize = document.querySelector(".responsive-menu");
-let displayMenu = document.getElementById("responsiveMainMenu");
-let visibleResponsiveNav = false;
+const displayMobileNavBar = document.querySelector(".mobile-screen");
 
-window.addEventListener("resize", function() {
-    if (window.matchMedia("(min-width: 1000px)").matches) {
-        if(visibleResponsiveNav) {
-            toggleMenu();
-        }
-    }
-})
+const displayUserNavBar = () => {
+    
+    displayMobileNavBar.classList.toggle("hidden");
 
-mobileBtnOpen.addEventListener("click", () => {
-    toggleMenu();
-});
-mobileBtnClose.addEventListener("click", () => {
-    toggleMenu();
-});
+    console.log('asdas');
 
-function toggleMenu() {
-    displayMenu.classList.toggle('responsive-menu');
-
-    displayMenu.style.width = `${window.innerWidth + 1}px`;
-    visibleResponsiveNav = !visibleResponsiveNav;
 };
 
-window.addEventListener("scroll", (event) => {
-    let scroll = this.scrollY;
-
-    const navBar = document.querySelector(".page-navigation-bar");
-    const gotoSectionBtn = document.querySelector(".goto-section");
-
-    if(scroll > 0) {
-        navBar.style.backgroundColor = 'rgba(18,27,67,1)';
-        navBar.style.border = 0;
-        gotoSectionBtn.style.opacity = scroll == -0 ? '1' : `${25/scroll}`;
-
-    } else {
-        navBar.style.backgroundColor = 'transparent';
-        navBar.style.borderBottom = '1px solid rgba(255, 255, 255, .5)';
-        gotoSectionBtn.style.opacity = '1';
-    }
-});
+mobileNavBarBtn_open.addEventListener("click", displayUserNavBar);
+mobileNavBarBtn_close.addEventListener("click", displayUserNavBar);
