@@ -1,4 +1,201 @@
-@media only screen and (max-width: 870px)  {
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-screen: 1200px;
 
+// media queries for tablet screen
+@media (min-width: $breakpoint-tablet) {
+
+    .main-page-content {
+        width: 100%;
+
+        .page-content {
+            width: 75%;
+        }
+    }
     
+    .about-platform{
+        display: flex;
+        justify-content: center;
+
+        .platform-content {
+            max-width: 80%;
+        }
+    }
+
+    .footer {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+        .footer-content {
+            max-width: 80%;
+        }
+    }
+}
+
+// media queries for laptop screen
+@media (min-width: $breakpoint-laptop) 
+{
+
+    #openMenu {
+        display: none;
+    }
+    // navbar buttons
+    .large-screen {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+
+        .page-search-btn {
+            display: flex;
+            align-items: center;
+
+            margin-left: 50px;
+        }
+    }
+
+    // center message
+    .screen-message_title
+    {
+        .message-title {
+            font-size: 3.5rem !important;
+        }
+    }
+    .screen-message_content 
+    {
+        .message-content {
+            font-size: 2rem !important;
+        }
+    }
+
+    .main-page-content {
+
+        .page-content {
+            width: 85%;
+
+            margin: 2% 0;
+
+            .main-content-title 
+            {
+                .main-title {
+                    font-size: 4rem;
+                }
+            }
+
+            .main-content-ourServices {
+                .platform-services {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .service-items-content {
+                        max-width: 55%;
+                    }
+                }
+            }
+
+            // abour platform services 
+            .about-our-services {
+                display: flex;
+                flex-direction: row;
+
+                .aboutServiceItem {
+
+                    .about-title {
+                        font-size: 1.5rem;
+
+                        .aboutIcon {
+                            font-size: 2.5rem;
+                        }
+                    }
+
+                    .aboutListItem {
+                        font-size: 1.25rem;
+                    }
+                }
+            }   
+        }
+    }
+
+    // section explain-our-service
+    .explain-our-service {
+        display: flex;
+        justify-content: center;
+
+        .service-content {
+            font-size: 2rem;
+            max-width: 80%;
+        }
+    }
+
+    // about platform section
+    .about-platform {
+        .platform-content {
+            display: flex;
+            flex-direction: row;
+
+            .submitButtonTextContent {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .footer {
+        .footer-address-content {
+            text-align: center;
+            .address-contact_office {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .footer {
+
+        .fa-brands {
+            font-size: 2rem;
+        }
+    }
+}
+
+// media queries for (normal) screen screen
+@media (min-width: $breakpoint-screen) {
+
+    .container {
+        .navigationbar-content {
+            width: 60%;
+        }
+    }
+
+    .main-page-content {
+        .page-content {
+            width: 60%;
+        
+            .main-content-ourServices {
+                margin: 2% 0;
+            }
+            .about-our-services {
+                margin: 0;
+            }
+        }
+    }
+    .explain-our-service  
+    {
+        .service-content {
+            max-width: 60%;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+        }
+    }
+
+    .about-platform {
+        .content {
+            max-width: 50%;
+        }
+        .platform-image {
+            max-width: 30%;
+        }
+    }
 }

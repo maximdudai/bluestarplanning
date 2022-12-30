@@ -4,12 +4,36 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #434343;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 * {
   color: white;
+}
+
+::-moz-selection {
+  background-color: #121b43;
+}
+
+::selection {
+  background-color: #121b43;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  padding: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px 0 0 5px;
+  background: #121b43;
 }
 
 ul, li, a {
@@ -63,7 +87,7 @@ header .container nav .page-links .mobile-screen .mobile-menu-display {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #232323;
+  background-color: #121b43;
   position: fixed;
   top: 0;
   left: 0;
@@ -160,6 +184,7 @@ header .center-screen-message .screen-message_content .message-content {
 .main-page-content {
   width: 100%;
   height: auto;
+  background: #434343;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -211,6 +236,7 @@ header .center-screen-message .screen-message_content .message-content {
   margin-top: 10px;
   border: 1px solid orange;
   padding: 5px 20px;
+  border-radius: 5px;
 }
 .main-page-content .page-content .request-a-contact .request-button .requestCallButton {
   background-color: transparent;
@@ -245,6 +271,7 @@ header .center-screen-message .screen-message_content .message-content {
 }
 .main-page-content .page-content .about-our-services .aboutServiceItem .about-content .aboutListItem {
   list-style: none;
+  padding-right: 10px;
 }
 
 .explain-our-service {
@@ -257,11 +284,11 @@ header .center-screen-message .screen-message_content .message-content {
   background-size: cover;
 }
 .explain-our-service .service-content {
-  padding: 10px;
+  padding: 35px;
   font-size: 1.25rem;
   text-align: center;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 45px;
   font-family: "Chivo Mono", monospace;
 }
 
@@ -269,7 +296,6 @@ header .center-screen-message .screen-message_content .message-content {
   width: 100%;
   height: auto;
   background: #434343;
-  margin-top: 5%;
 }
 .about-platform .platform-content {
   display: flex;
@@ -319,4 +345,112 @@ header .center-screen-message .screen-message_content .message-content {
   width: 85%;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #121b43;
+}
+.footer .footer-content .footer-text {
+  text-align: center;
+  padding: 20px;
+}
+.footer .footer-content .footer-text .text-title .title-content {
+  font-size: 2.5rem;
+}
+.footer .footer-content .footer-text .text-message .text-content {
+  font-size: 1.25rem;
+}
+.footer .footer-content .footer-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-content .footer-form .form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.footer .footer-content .footer-form .form-input .formInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  background: none;
+  text-align: left;
+  margin: 10px 0;
+}
+.footer .footer-content .footer-form .form-input .formInput #formName, .footer .footer-content .footer-form .form-input .formInput #formEmail {
+  font-size: 1rem;
+  color: white;
+  background: none;
+  border: 2px solid orange;
+  border-radius: 5px;
+  padding: 10px;
+}
+.footer .footer-content .footer-form .form-input .formInput #formName:focus, .footer .footer-content .footer-form .form-input .formInput #formEmail:focus {
+  outline: none;
+}
+.footer .footer-content .footer-form .form-input .formInput .inputLabel {
+  padding: 5px;
+  border-top: 1px solid orange;
+}
+.footer .footer-content .footer-form .form-input .formSubmitBtn {
+  margin: 10px 0;
+  background: none;
+  padding: 10px;
+  border: 1px solid orange;
+  border-radius: 5px;
+  color: white;
+  max-width: 50%;
+}
+.footer .footer-content .footer-contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.footer .footer-content .footer-contact .footer-address .footer-address-google-maps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-content .footer-contact .footer-address .footer-address-google-maps .google-maps-iframe {
+  width: 95%;
+  height: 40vh;
+  border-radius: 5px;
+}
+.footer .footer-content .footer-contact .footer-address-content {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.footer .footer-content .footer-contact .footer-address-content .addressContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 30px 0;
+}
+.footer .footer-content .footer-contact .footer-address-content .addressContent .addresContentTitle {
+  font-size: 2rem;
+}
+.footer .footer-content .footer-contact .footer-address-content .addressContent .addrestContentList {
+  display: flex;
+  flex-direction: column;
+}
+.footer .all-rights {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.footer .all-rights .footerLinks {
+  text-align: center;
+}
+.footer .all-rights .footerLinks .fa-brands {
+  padding: 10px 0;
+  font-size: 1.5rem;
+  margin: 0 10px;
 }/*# sourceMappingURL=style.css.map */
